@@ -9,6 +9,9 @@
 		if($data[auth_time]<time()-31*24*60*60)return false;
 		return $data[student_id];
 	}
+	function error($error_message){
+		return json_encode(array("status"=>"error","error"=>$error_message));
+	}
 	
 	
 	

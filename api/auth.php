@@ -2,9 +2,9 @@
 	include_once('../sys/global.php');
 	include_once('sys/api_global.php');
 	
-	if(empty($_REQUEST[pass]) || empty($_REQUEST[rbn]))exit(json_encode(array("status"=>"error","error"=>"не указаны обязательные параметры")));
+	if(empty($_REQUEST[pass]) || empty($_REQUEST[rbn]))exit(error("не указаны обязательные параметры"));
 	
-	if(!preg_match('/^[0-9]{8}$/',$_REQUEST[rbn]))exit(json_encode(array("status"=>"error","error"=>"некорректное значение параметра rbn")));
+	if(!preg_match('/^[0-9]{8}$/',$_REQUEST[rbn]))exit(error("некорректное значение параметра rbn"));
 	
 	$rbn=$_REQUEST[rbn];
 	$pass=md5(md5($_REQUEST[pass]."kasbdgkasgdkasbgd")."asdasdasd");
@@ -16,10 +16,10 @@
 		$data[auth_hash]=md5(uniqid("",1).time().rand(1,1000000));
 		
 		mysql_query("INSERT INTO auth_data VALUES (".$data[student_id].",'".$data[auth_hash]."',".time().",INET_ATON('".$_SERVER[REMOTE_ADDR]."'))",DB);
-		if(mysql_error())exit(json_encode(array("status"=>"error","error"=>"auth data saves error")));
+		if(mysql_error())exit(error("auth data saves error"));
 		
 		exit(json_encode(array("status"=>"ok","data"=>$data)));
 	}else{
-		exit(json_encode(array("status"=>"error","error"=>"bad auth data")));
+		exit(error("bad auth data"));
 	}
 ?>
