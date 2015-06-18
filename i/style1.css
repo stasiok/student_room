@@ -1,0 +1,109 @@
+body{
+	background: #e8e8e8;
+	font-family: Garamond;
+}
+
+.header{
+	margin: 0 auto;
+	width: 1200px;
+	height: 90px;
+	margin-top: 30px;
+}
+
+.headerInsider{
+	margin: 0 auto;
+	width: 600px;
+	height: 100%;
+}
+
+.headText{
+	text-align: center;
+	color: #6b6b6b; 
+	font-size: 40px;
+}
+
+.text1{
+	text-align: center;
+	color: #6b6b6b;
+	font-size: 40px;
+}
+
+.text2{
+	text-align: center;
+	color: #6b6b6b; 
+	font-size: 20px;
+	margin-top: 3px;
+}
+
+.line1{
+	margin: 0 auto; 
+	height: 1px; 
+	width: 270px;
+	background: #6b6b6b;
+}
+
+.line2{
+	margin: 0 auto; 
+	height: 1px; 
+	width: 250px;
+	background: #6b6b6b;
+}
+
+.line3{
+	margin: 0 auto; 
+	height: 1px; 
+	width: 250px;
+	background: #6b6b6b;
+	margin-top: 25px;
+}
+
+.line4{
+	margin: 0 auto; 
+	height: 2px; 
+	width: 250px;
+	background: #6b6b6b;
+}
+
+.form{
+	margin: 0 auto;
+	width: 250px;
+	height: 150px;
+	margin-top: 80px;
+}
+
+#id{
+	font-size: 20px;
+	text-align: center;
+}
+
+.buttonEnter p{
+	width: 250px;
+	height: 35px;
+	background: #6b6b6b;
+	margin-top: 25px;
+	color: #e8e8e8;
+	text-align: center;
+}
+
+.NIZ{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+
+.footer{
+	margin: 0 auto;
+	text-align: center;
+	color: #6b6b6b;
+	font-size: 11px;
+	margin: 5px;
+}
+
+.bottom{
+	width: 100%;
+	height: 7px;
+	background: #6b6b6b;
+}
+
+
+
