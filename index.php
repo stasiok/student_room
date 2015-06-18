@@ -1,6 +1,6 @@
 <?
 	include_once('sys/global.php');
-	//18,06,15
+	//18,06,155555555
 ?>
 <!DOCTYPE html>
 <html lang="ru">
