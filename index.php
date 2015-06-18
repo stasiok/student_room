@@ -1,11 +1,7 @@
 <?
 	include_once('sys/global.php');
-<<<<<<< HEAD
-	//18,06,15
-	//1111111
-=======
 	//18,06,155555555
->>>>>>> origin/master
+	//1111111
 ?>
 <!DOCTYPE html>
 <html lang="ru">
